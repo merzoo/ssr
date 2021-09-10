@@ -7,8 +7,9 @@
 ├── package.json
 ├── src
 │   ├── client
-│   ├── container
-│   └── server
+│   ├── server
+│   ├── components
+│   └── container
 ├── webpack.base.js
 ├── webpack.client.js
 ├── webpack.server.js
@@ -21,4 +22,4 @@
 - [x] 客户端/服务端首屏 DOM
 - [x] 添加客户端事件
 - [x] 共享路由配置，实现路由功能
-- [ ] 共享数据
+- [x] 共享数据

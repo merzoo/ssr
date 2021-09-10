@@ -1,16 +1,17 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
+import actions from "../../store/actions/counter";
 
-const Counter = () => {
-  const [count, setCount] = useState(0);
+const Counter = ({ number, increment }) => {
   return (
     <div>
       <h3>Counter</h3>
-      <p>count:{count}</p>
+      <p>count:{number}</p>
       <p>
-        <button onClick={() => setCount(count + 1)}>+1</button>
+        <button onClick={increment}>+1</button>
       </p>
     </div>
   );
 };
 
-export default Counter;
+export default connect((state) => state.counter, actions)(Counter);
