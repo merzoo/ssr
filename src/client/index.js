@@ -1,5 +1,15 @@
 import React from "react";
 import { hydrate } from "react-dom";
-import Counter from "../container/Counter";
+import { BrowserRouter } from "react-router-dom";
+import routes from "../routes";
+import Header from "../components/Header";
 
-hydrate(<Counter />, document.getElementById("root"));
+hydrate(
+  <BrowserRouter>
+    <Header></Header>
+    <div className="container" style={{ marginTop: 70 }}>
+      {routes}
+    </div>
+  </BrowserRouter>,
+  document.getElementById("root")
+);
