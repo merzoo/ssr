@@ -1,0 +1,8 @@
+{
+  "name": "ssr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/merzoo/ssr.git",
+  "author": "guojinliang <496168739@qq.com>",
+  "license": "MIT"
+}
