@@ -1,5 +1,5 @@
 import React from "react";
 import { hydrate } from "react-dom";
-import Home from "../container/Home";
+import Counter from "../container/Counter";
 
-hydrate(<Home />, document.getElementById("root"));
+hydrate(<Counter />, document.getElementById("root"));

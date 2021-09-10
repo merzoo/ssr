@@ -1,9 +1,10 @@
 import React from "react";
 import { renderToString } from "react-dom/server";
 import Home from "../container/Home";
+import Counter from "../container/Counter";
 
 export default function render(req, res) {
-  const html = renderToString(<Home />);
+  const html = renderToString(<Counter />);
   res.send(`
     <html>
         <head>
