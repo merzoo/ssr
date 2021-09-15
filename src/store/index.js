@@ -4,7 +4,10 @@ import logger from "redux-logger";
 import reducers from "./reducers/index";
 
 export function getClientStore() {
-  return createStore(reducers, applyMiddleware(thunk, logger));
+  let initState = window.context.state;
+
+  console.log(initState);
+  return createStore(reducers, initState, applyMiddleware(thunk, logger));
 }
 
 export function getServerStore() {

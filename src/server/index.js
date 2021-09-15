@@ -1,9 +1,9 @@
-import render from "./render";
-
 const express = require("express");
 const app = express();
 
 app.use(express.static("public"));
+
+import render from "./render";
 
 app.get("*", (req, res) => {
   render(req, res);
